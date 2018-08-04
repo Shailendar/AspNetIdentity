@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if (TempData["success"] != null)
+{
+    <div style="margin: 10px;" class="text-center">
+        <span class="label label-success temp-alert">@TempData["success"].ToString()</span>
+    </div>
+}
+@if (TempData["error"] != null)
+{
+    <div style="margin: 10px;" class="text-center">
+        <span class="label label-danger temp-alert">@TempData["error"].ToString()</span>
+    </div>
+}
